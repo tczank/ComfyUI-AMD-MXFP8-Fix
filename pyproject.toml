@@ -1,0 +1,19 @@
+[project]
+name = "amd-mxfp8-fix"
+version = "1.0.0"
+description = "Workaround for MXFP8 models that crash ComfyUI on AMD/ROCm: dequantize MXFP8 weights once at load instead of on every forward."
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "Environment :: GPU :: AMD ROCm",
+]
+
+[project.urls]
+Repository = "https://github.com/tczank/ComfyUI-AMD-MXFP8-Fix"
+"Bug Tracker" = "https://github.com/tczank/ComfyUI-AMD-MXFP8-Fix/issues"
+
+[tool.comfy]
+PublisherId = "tczank"
+DisplayName = "AMD MXFP8 Fix"
